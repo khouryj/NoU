@@ -1,0 +1,6 @@
+C:\Users\eahscs\Documents\GitHub\NoU\Fast Eddie\Fast Eddie\bin\Debug\Fast Eddie.exe.config
+C:\Users\eahscs\Documents\GitHub\NoU\Fast Eddie\Fast Eddie\bin\Debug\Fast Eddie.exe
+C:\Users\eahscs\Documents\GitHub\NoU\Fast Eddie\Fast Eddie\bin\Debug\Fast Eddie.pdb
+C:\Users\eahscs\Documents\GitHub\NoU\Fast Eddie\Fast Eddie\obj\Debug\Fast Eddie.csprojResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\NoU\Fast Eddie\Fast Eddie\obj\Debug\Fast Eddie.exe
+C:\Users\eahscs\Documents\GitHub\NoU\Fast Eddie\Fast Eddie\obj\Debug\Fast Eddie.pdb
