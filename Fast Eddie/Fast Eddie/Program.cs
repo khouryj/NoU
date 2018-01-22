@@ -18,18 +18,34 @@ namespace Fast_Eddie
             {
                 if (t != '+' && t != '-' && t != '*' && t != '/')
                 {
+                    
                     output += t;
                 }
                 else if (t == ')')
                 {
-                    char c;
-                    
+                    while (!ace.Pop().Equals('('))
+                    {
+                        if(ace.Pop().Equals('+') || ace.Pop().Equals('-') || ace.Pop().Equals('*') || ace.Pop().Equals('/'))
+                        {
+                            output += ace.Pop(); //faggot
+                        }
+                        else
+                        {
+                            ace.Pop();
+                        }
+                    }
                 }
                 else
                 {
+                    if (ace.Count != 0)
+                    {
+                        output += ace.Pop();
+                    }
                     ace.Push(t);
                 }
+                
             }
+            Console.WriteLine(output);
         }   
     }
 }
