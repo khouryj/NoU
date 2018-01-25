@@ -10,24 +10,23 @@ namespace Fast_Eddie
     class Program
     {
         static void Main(string[] args)
-        {
-            Stack ace = new Stack();
+        {            
+            Stack<String> ace = new Stack<String>();
             String input = Console.ReadLine().Replace(" ", "");
             String output = "";
             foreach (char t in input)
             {
-                if (t != '+' && t != '-' && t != '*' && t != '/')
-                {
-                    
+                if (!"+-*/(".Contains(t))
+                {                    
                     output += t;
                 }
                 else if (t == ')')
                 {
-                    while (!ace.Pop().Equals('('))
+                    while (!ace.Peek().Equals('('))
                     {
-                        if(ace.Pop().Equals('+') || ace.Pop().Equals('-') || ace.Pop().Equals('*') || ace.Pop().Equals('/'))
+                        if ("+-*/".Contains(ace.Peek()))
                         {
-                            output += ace.Pop(); //faggot
+                            output += ace.Pop(); 
                         }
                         else
                         {
@@ -41,7 +40,7 @@ namespace Fast_Eddie
                     {
                         output += ace.Pop();
                     }
-                    ace.Push(t);
+                    ace.Push(t.ToString());
                 }
                 
             }
